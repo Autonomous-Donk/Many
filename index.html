@@ -1,88 +1,55 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>光刻机技术详解 - 专业知识平台（目录 · 2025-10-17）</title>
-  <meta name="description" content="光刻机技术详解与行业进展（拆分多页版），更新于 2025-10-17。"/>
-  <style>
-    :root{--bg:#f6f8fa;--card:#fff;--muted:#6b7280;--accent:#0f172a;--primary:#0b61ff;}
-    body{margin:0;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;background:linear-gradient(180deg,#f8fafc,#eef2f6);color:#102030;}
-    .container{max-width:1100px;margin:28px auto;padding:20px;}
-    header{display:flex;align-items:center;gap:14px;}
-    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0b61ff,#6bc1ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;}
-    h1{margin:0;font-size:20px;}
-    nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;}
-    .btn{background:var(--card);padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--primary);box-shadow:0 6px 14px rgba(16,24,40,0.04);}
-    .grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px;}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(15,23,42,0.06);}
-    aside{background:var(--card);padding:14px;border-radius:12px;height:fit-content;box-shadow:0 6px 18px rgba(15,23,42,0.04);}
-    ul.index{padding-left:18px;}
-    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center;}
-    @media(max-width:900px){.grid{grid-template-columns:1fr;}}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首页 - EUV 光刻机技术</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo" aria-hidden="true">光刻</div>
-      <div>
-        <h1>光刻机技术详解</h1>
-        <div style="color:#6b7280;font-size:13px;margin-top:6px">专业知识平台 · 页面更新：2025-10-17</div>
-      </div>
-    </header>
-
-    <nav aria-label="主导航">
-      <a class="btn" href="index.html">目录</a>
-      <a class="btn" href="principle.html">基础原理</a>
-      <a class="btn" href="core.html">核心技术</a>
-      <a class="btn" href="market.html">全球格局</a>
-      <a class="btn" href="china.html">国产进展</a>
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">EUV 光刻机技术</h1>
+      <ul class="flex space-x-4 text-sm font-medium">
+        <li><a href="index.html" class="text-blue-600">首页</a></li>
+        <li><a href="principle.html">原理</a></li>
+        <li><a href="core.html">核心技术</a></li>
+        <li><a href="market.html">市场格局</a></li>
+        <li><a href="china.html">中国发展</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="grid" role="main">
-      <main class="card" aria-labelledby="overview-title">
-        <h2 id="overview-title">站点目录 · 快速导航</h2>
-        <p style="color:#425163">本站已拆分为独立子页，便于聚焦阅读与直接分享。每页均标注更新时间：2025-10-17。</p>
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">项目简介</h2>
+      <p class="text-gray-700 leading-relaxed">
+        本网站致力于普及极紫外光刻机（EUV）技术，涵盖从基础原理到尖端应用的完整知识体系。内容分为基础入门与专业深度两个版本，适合不同层次的读者。
+      </p>
+    </section>
 
-        <section style="margin-top:12px">
-          <h3>快速目录</h3>
-          <ul class="index">
-            <li><a href="principle.html">基础原理与技术演进（principle.html）</a></li>
-            <li><a href="core.html">核心技术解析（core.html）</a></li>
-            <li><a href="market.html">全球格局与市场分析（market.html）</a></li>
-            <li><a href="china.html">国产替代进展与挑战（china.html）</a></li>
-          </ul>
-        </section>
-
-        <section style="margin-top:14px">
-          <h3>设计说明（简短）</h3>
-          <ul>
-            <li>拆分子页：每个主题单独页面，方便链接与深度扩展。</li>
-            <li>保留原文要点，补充“截至 2025-10-17 的行业观测”小节。</li>
-            <li>页面风格统一、响应式并兼顾可读性。</li>
-          </ul>
-        </section>
-
-      </main>
-
-      <aside class="card" aria-labelledby="aside-title">
-        <h4 id="aside-title">站点信息</h4>
-        <p style="color:#6b7280;font-size:14px;margin-top:6px">更新时间：2025-10-17</p>
-        <p style="font-size:14px;margin-top:8px">文件清单：</p>
-        <ul style="padding-left:18px;color:#283845">
-          <li>index.html（本页）</li>
-          <li>principle.html</li>
-          <li>core.html</li>
-          <li>market.html</li>
-          <li>china.html</li>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-lg font-bold text-blue-600 mb-2">基础入门版</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>光刻机本质与作用</li>
+          <li>半导体制造核心设备解析</li>
+          <li>纳米级精度技术说明</li>
         </ul>
-      </aside>
-    </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-lg font-bold text-blue-600 mb-2">专业深度版</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>瑞利公式与分辨率极限</li>
+          <li>EUV 光源原理与挑战</li>
+          <li>精密机械与光学系统设计</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      © 2025 光刻机技术知识平台 | 内容基于公开信息整理
-    </footer>
-  </div>
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500">
+    © 2025 EUV Lithography Knowledge Hub
+  </footer>
 </body>
 </html>
